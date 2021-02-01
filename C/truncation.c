@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//using floats real number
 int main(void) 
 {
   //Get numbers from user
