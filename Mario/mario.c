@@ -2,7 +2,7 @@
 
 int main(void) {
   for(int i = 0; i < 10; i++) {
-    // loop
+    // looping 10 times and print
      printf("I have a dream");
   }
 }
