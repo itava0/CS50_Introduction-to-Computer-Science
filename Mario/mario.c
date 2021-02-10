@@ -1,8 +1,12 @@
 #include <stdio.h>
 
+//Prompt user for positive integer
 int main(void) {
-  for(int i = 0; i < 10; i++) {
-    // looping 10 times and print
-     printf("I have a dream");
-  }
+ int n;
+ do
+ {
+   n = get_int("Positive Integer: ");
+ }
+ while(n < 1);
+ return n;
 }
