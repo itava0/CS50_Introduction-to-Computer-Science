@@ -1,13 +1,42 @@
-#include <stdio.h>
 //The program we’ll write will be called mario. And let’s allow the user to decide just how tall the pyramid should be by first prompting them for a positive integer between, say, 1 and 8, inclusive.
 
-//Prompt user for positive integer
-int main(void) {
- int n;
- do
- {
-   n = get_int("Positive Integer: ");
- }
- while(n < 1);
- return n;
+#include <stdio.h>
+#include <cs50.h>
+
+void buildPyramid(int height);
+
+int main(void)
+{
+    // Initialize the variable height
+    int height;
+
+    // Run the loop to get a value of height between 1 and 8, inclusive, from the user
+    do
+    {
+        height = get_int("Height: ");
+    }
+    while (height < 1 || height > 8);
+
+    // Call the function and pass height to it as a parameter
+    buildPyramid(height);
 }
+
+// Declare the function buildPyramid
+void buildPyramid(int height)
+{
+    // Loop to add a new line
+    for (int i = 0; i < height; i++)
+    {
+        // Loop to add spaces
+        for (int k = height - i; k > 1; k--)
+        {
+            printf(" ");
+        }
+        // Loop to add hashes
+        for (int j = 0; j <= i; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+} 
