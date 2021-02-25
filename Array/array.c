@@ -6,7 +6,7 @@ int main(void)
 
   while( i < 50) 
   {
-    // print hello
+    // print hello k
     printf("Hello, World\n");
     i++;
   }
