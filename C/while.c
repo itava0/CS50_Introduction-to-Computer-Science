@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// learned how to use while loops on C
 int main(void) 
 {
   int i = 0;
