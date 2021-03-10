@@ -3,7 +3,7 @@
 int main(void) 
 {
   int i = 0;
-// while loop essential
+// while loop essential piece
   while( i < 50) 
   {
     printf("Hello, World\n");
